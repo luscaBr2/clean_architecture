@@ -1,0 +1,1 @@
+Dentro da pasta Repositories apenas entra interfaces, não entra nada de implementação (implementação é na infra)
