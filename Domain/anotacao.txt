@@ -1,0 +1,14 @@
+Aqui nessa pasta fica suas regras de mais alto nível.
+
+Por exemplo se a Registration só é possível com pessoas acima de 
+18 anos, então isso é uma regra de negócio, então essa regra tem 
+que estar no Entities com as devidas validações, assim todas que 
+usarem a Entities ja seguirá essa regra de negócio de modo global 
+dentro da aplicação.
+
+O exemplo acima está sendo exibido no setter do $birthDate 
+do arquivo Registration.php.
+
+=========================
+
+Uma classe classificada como "final" é uma classe que implica não ter nenhuma dependência
