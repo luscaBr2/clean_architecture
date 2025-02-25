@@ -13,7 +13,7 @@ final class OutputBondery
 {
     // são os mesmos atributos de Registrantion porém com tipos primitivos(string)
 
-    private string $nome;
+    private string $name;
     private string $email;
     private string $registrationNumber;
     private string $birthDate;
@@ -35,9 +35,9 @@ final class OutputBondery
         return $this->nome;
     }
 
-    public function setNome($nome): static
+    public function setNome($name): static
     {
-        $this->nome = $nome;
+        $this->nome = $name;
 
         return $this;
     }

@@ -1,6 +1,8 @@
 <?php
 
 require "Domain/Entities/Registration.php";
+use Application\UseCases\ExportRegistration\ExportRegistration;
+use Application\UseCases\ExportRegistration\InputBondery;
 use Domain\Entities\Registration;
 
 $registration = new Registration();
@@ -14,3 +16,10 @@ $registration->setName("Lucas Santos")
 
 // echo "<pre>"; print_r($registration); echo "</pre>";
 
+$exportRegistrationUseCases = new ExportRegistration();
+
+$inputBoundery = new InputBondery("01234567890");
+
+$outputBoundery = $exportRegistrationUseCases->handle($inputBoundery);
+
+echo "<pre>"; print_r($outputBoundery); echo "</pre>";

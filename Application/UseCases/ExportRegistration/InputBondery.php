@@ -10,15 +10,15 @@ namespace Application\UseCases\ExportRegistration;
 // não é interessante usar tipos de objetos aqui, sempre usar tipos primitivos
 final class InputBondery
 {
-    private string $cpf;
+    private string $registrationNumber;
     
-    public function __construct(string $cpf)
+    public function __construct(string $registrationNumber)
     {
-        return $this->cpf = $cpf;
+        $this->registrationNumber = $registrationNumber;
     }
 
-    public function getCpf(): string
+    public function getRegistrationNumber(): string
     {
-        return $this->cpf;
+        return $this->registrationNumber;
     }
 }

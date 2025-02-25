@@ -25,6 +25,11 @@ final class Cpf
         $this->cpf = $cpf;
     }
 
+    public function __tostring(): string
+    {
+        return $this->cpf;
+    }
+
     private function validaCPF($cpf): bool 
     {
         // Extrai somente os números

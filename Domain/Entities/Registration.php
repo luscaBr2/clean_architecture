@@ -11,7 +11,7 @@ use Domain\ValueObjects\Email;
 
 final class Registration
 {
-    private string $nome;
+    private string $name;
     private Email $email;
     private Cpf $registrationNumber;
     private DateTimeInterface $birthDate;
@@ -25,13 +25,13 @@ final class Registration
 
     // Em todos os SETTERS dessa classe, eles atribuem o valor desejado e retornam um Registration, 
     // para usar a propriedade de fluent Setters usada no index.php
-    public function setName(string $nome): Registration
+    public function setName(string $name): Registration
     {
-        $this->nome = $nome;
+        $this->nome = $name;
         return $this;
     }
 
-    public function getEmail(): string
+    public function getEmail(): Email
     {
         return $this->email;
     }
