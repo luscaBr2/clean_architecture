@@ -20,14 +20,14 @@ final class Registration
     // GETTERS e SETTERS
     public function getName(): string
     {
-        return $this->nome;
+        return $this->name;
     }
 
     // Em todos os SETTERS dessa classe, eles atribuem o valor desejado e retornam um Registration, 
     // para usar a propriedade de fluent Setters usada no index.php
     public function setName(string $name): Registration
     {
-        $this->nome = $name;
+        $this->name = $name;
         return $this;
     }
 

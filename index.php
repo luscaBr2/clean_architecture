@@ -7,7 +7,7 @@ use Domain\Entities\Registration;
 
 $registration = new Registration();
 
-// o ato de setar os valores em cascata tem o nome de "fluent setter"
+// o ato de setar os valores em cascata tem o name de "fluent setter"
 $registration->setName("Lucas Santos")
     ->setEmail("lucas.ifsp387@gmail.com")
     ->setBirthDate(new DateTimeImmutable("2004-01-01"))
@@ -18,7 +18,7 @@ $registration->setName("Lucas Santos")
 
 $exportRegistrationUseCases = new ExportRegistration();
 
-$inputBoundery = new InputBondery("01234567890");
+$inputBoundery = new InputBondery("01234567890", );
 
 $outputBoundery = $exportRegistrationUseCases->handle($inputBoundery);
 

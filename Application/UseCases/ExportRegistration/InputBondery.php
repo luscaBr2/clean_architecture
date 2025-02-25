@@ -11,14 +11,29 @@ namespace Application\UseCases\ExportRegistration;
 final class InputBondery
 {
     private string $registrationNumber;
+    private string $pdfFileName; // o nome do pdf vem aqui para que o use case não tenha essa informação
+    private string $path;
     
-    public function __construct(string $registrationNumber)
+    public function __construct(
+        string $registrationNumber, 
+        string $pdfFileName)
     {
         $this->registrationNumber = $registrationNumber;
+        $this->pdfFileName = $pdfFileName;
     }
 
     public function getRegistrationNumber(): string
     {
         return $this->registrationNumber;
     }
+    public function getPdfFileName(): string    
+    {
+        return $this->pdfFileName;
+    }
+
+    public function getPath()
+    {
+        return $this->path;
+    }
+
 }
